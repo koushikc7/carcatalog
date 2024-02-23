@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>ONLINE</b> Car Booking System</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#project" class="w3-bar-item w3-button">Website</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#video" class="w3-bar-item w3-button">Get to know us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="{{ url_for('static', filename='img/present.jpg') }}" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Book Your car online</b></span> <span class="w3-hide-small w3-text-light-grey"></span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+
+  
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Search Faster, Better & Smarter Here!. The Complete Overview. Web, Images & Video. 100+ Million Visitors. Trusted by Millions.Offers an effective solution where customers can view various cars those available in a showroom and select the preferred car for test-drive 
+    </p>
+  </div>
+  
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    	<!-- 
+      <img src="{{ url_for('static', filename='img/ba.jpg.jpg') }}" alt="John" style="width:100%">
+      <h3>Balaji Theratipally</h3>
+      <p class="w3-opacity">Sales Manager</p>
+      
+     
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{{ url_for('static', filename='img/kou.jpg.jpg') }}"  style="width:100%">
+      <h3>Koushik Chanda</h3>
+      <p class="w3-opacity">Finance Manager</p>
+     
+     
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{{ url_for('static', filename='img/san.jpg.jpg') }}" alt="Mike" style="width:100%">
+      <h3>Sankeerthana Reddy</h3>
+      <p class="w3-opacity">Customer Service Representative</p>
+     
+      
+    </div>
+    -->
+    
+  </div>
+  </div>
+
+
+ 
+  
+<!-- Image of location/map -->
+<div class="w3-container" id="video">
+<video width="999" height="555" controls autoplay>
+  <source src="/Users/koushik/Desktop/finalproj/templates/finalcar.mp4" type="video/mp4">
+<source src="{{ url_for('static', filename='img/finalcar.mp4') }}"  width="999" height="555">
+  
+</video>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16" id="project">
+ <a  href="home.html" target="center">click here to view website</a>
+</footer>
+
+</body>
+</html>

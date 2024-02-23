@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="hatchback.css">
+
+<style>
+body {
+  background-color: white;
+}
+table {
+  border: 1px dashed black;
+  padding: 30px;
+}
+
+h1 {
+  color: white;
+  font-family: verdana;
+  font-size: 200%;
+}
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 200%;
+}
+</style>
+
+
+</head>
+
+<body>
+<h2 style="margin:auto;width:30%">BENTLY CONTINENTAL</h2>
+<font face="verdana" size=4>
+<table class="table table-bordered" style="margin:auto;width:30%">
+<tr><td> 
+<img src="{{ url_for('static', filename='img/bently.jpg') }}"  width="666" height="444"><br><br>
+</td></tr>
+</table><br><br>
+</font>
+
+
+<table class="table table-bordered" style="margin:auto;width:60%">
+  <tr>
+    <th>Model Name</th>
+    <th>Cost Range(INR)</th> 
+    <th>Mileage</th>
+    <th>Petrol/Diesel</th>
+    <th>Horsepower</th>
+  </tr>
+  <tr>
+    <td>Bently Spur</td>
+    <td>3.21-3.41 Crore</td>
+    <td>12.5 kmpl</td>
+    <td>Petrol</td>
+    <td>5998 CC</td>
+  </tr>
+  
+</table>
+<br><br>
+<font face="verdana" size=4>
+<table class="table table-bordered" style="margin:auto;width:60%">
+<tr><td>
+<h1 class="text-center"><span class = "label label-default">Want to test Drive..? </span></h1>
+<h2>Do you have driving license?</h2>
+
+
+<div class="container">
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Yes</button><br>
+
+<br><br><div id="demo2" ><button type="button" class="btn btn-info" onclick="myFunction()">No</button>
+
+</div>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("sorry you can not register without license")) {
+    txt = "test drive option is enabled only for those who have license ";
+  } else {
+    txt = " Thank you";
+  }
+  document.getElementById("demo2").innerHTML = txt;
+}
+</script>
+
+<div id="demo" class="collapse">
+<form method="POST">
+<label for="name">Enter your name      :</label>
+<input type="text" id="name" name="name" value="" required><br>
+
+  
+<label for="phone_number">Enter your phonenumber:</label>
+<input type="text" id="phone_number" name="phone_number" value="" required><br>
+  
+  <label for="email_id">Enter your email id:</label>
+<input type="text" id="" name="email_id" value="" required><br>
+
+<label for="date">Enter date           :</label>
+<input type="text" id="date" name="date" value="" required><br>
+
+<label for="date">Enter car model      :</label>
+<input type="text" id="car_model" name="car_model" value="" required><br>
+
+<mark><h3>Select any one slot</h3></mark>
+<h4>Available Slots</h4>
+<input type="radio" name="options" id="1AM" value="1AM">1APM</input><br>
+<input type="radio" name="options" id="2AM" value="2AM">2PM</input><br>
+<input type="radio" name="options" id="3AM" value="3AM">3PM</input><br>
+<button onclick= " ">Submit</button>
+</form>
+</div>
+<br><br>
+</td></tr>
+</table><br><br>
+</font>
+
+<div style="text-align:center;">
+<font face="verdana" size=4>
+<table class="table table-bordered" style="margin:auto;width:60%">
+<tr><td>
+<h1 class="text-center"><span class = "label label-default">Want to Book a Car..? </span></h1>
+<h2 class="text-center">Enter your details here for booking..!!!</h2>
+<form method="POST"  action="/book">
+<input type="text" placeholder="name" name="name" required>
+<input type="text" placeholder="phone_number" name="phone_number" required>
+<input type="text" placeholder="email_id" name="email_id" required>
+<input type="text" placeholder="Car_Model" name="car_model" required>
+<button onclick= " ">Submit</button><br>
+</form>
+<br>
+</td></tr>
+</table><br><br>
+</font>
+  </div>
+<div style="text-align:center;">
+<font face="verdana" size=4>
+<table class="table table-bordered" style="margin:auto;width:60%">
+<tr><td> 
+<h3 class="text-center"><span class="label label-default">Walkaround review of the Car</span></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tasWKXhghxs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</td></tr>
+</table>
+</font>
+<br><br><a href="home.html" target="left">Click here to go back to main page</a><br><br>
+</body>
+</html>
